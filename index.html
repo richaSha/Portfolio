@@ -8,8 +8,32 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div class="container-nav">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">Portfolio</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#home">Home</a></li>
+		        <li><a href="#about-me">Experience</a></li>
+		        <li><a href="#education">Education</a></li>
+		        <li><a href="#skill">Skill Set</a></li>
+		        <li><a href="#traning">Training</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
 	<div class="container-fluid">
+		<button  class="scrollup btn btn-info btn-lg hide"></button>
 		<div class="row" id="home">
 			<div class="col-sm-12 profilePic">
 				<img src="img/profilePic.jpg" class="img-circle img-responsive">
@@ -26,16 +50,8 @@
 			<div class="page-title">
 				<h1>Experience</h1>
 			</div>
+			
 			<div class="about-me-info col-sm-12 left">
-				<div class="col-sm-3">
-					<img src="img/epicodus.png" class="img-circle img-responsive aboutMeImg	">
-				</div>
-				<div class="col-sm-7">
-					<h3>Epicodus, Aug'17</h3>
-					<p>Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework. </p>
-				</div>
-			</div>
-			<div class="about-me-info col-sm-12 right">
 				<div class="col-sm-3">
 					<img src="img/lg.jpg" class="img-circle img-responsive aboutMeImg">
 				</div>
@@ -45,7 +61,7 @@
 					<p>* Firefox Mobile OS development for LG Fx0 phone - Developed and optimized the Camera and Gallery apps, atop the Gaia User Interface application, using Object Oriented Javascript.</p>
 				</div>
 			</div>
-			<div class="about-me-info col-sm-12 left">
+			<div class="about-me-info col-sm-12 right">
 				<div class="col-sm-3">
 					<img src="img/techm.jpg" class="img-circle img-responsive aboutMeImg">
 				</div>
@@ -55,7 +71,7 @@
 					<p>* Technologies used: Object Oriented Javascript & the OpenLayers library. </p>
 				</div>
 			</div>
-			<div class="about-me-info col-sm-12 right">
+			<div class="about-me-info col-sm-12 left">
 				<div class="col-sm-3">
 					<img src="img/floretmedia.png" class="img-circle img-responsive aboutMeImg">
 				</div>
@@ -87,7 +103,7 @@
 					<div class="bg"></div>
 					<div class="text">
 						<div class="logo"><img src="img/pwcLogo.gif"></div>
-						<h3>Patna Womens Collage</h3>
+						<h3>Patna Women's College</h3>
 						<p>Senior Secondary</p>
 						<p>Physics, Chemistry, Maths</p>
 						<p>2006 - 2008</p>
@@ -107,9 +123,107 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" id="project"></div>
-		<div class="row" id="hobbies"></div>
-		<div class="row" id="contactUs"></div>
+		<div class="row" id="skill">
+			<div class="page-divider"></div>
+			<div class="page-title">
+				<h1>Skill Set</h1>
+			</div>
+			<div class="col-sm-3 ">
+				<div class="skillInfo html">
+					<span>HTML 5</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo css">
+					<span>CSS 3</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo bootstrap">
+					<span>Bootstrap</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo javascript">
+					<span>JavaScript</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo jQuery">
+					<span>Jquery</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo react">
+					<span>React.js</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo git">
+					<span>GitHub</span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="skillInfo agile">
+					<span>Agile</span>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="traning">
+			<div class="page-divider"></div>
+			<div class="page-title">
+				<h1>Training</h1>
+			</div>
+			<div class="col-sm-12 training">
+				<img src="img/epicodus.png" class="img-responsive">
+			</div>
+			<div class="col-sm-12">
+					<h3>Epicodus - Certification in Web Development</h3>
+					<p>An intensive coding bootcamp focussing on Javascript, JQuery, AngularJS, CSS, HTML5, Bootstrap, Ruby on Rails and MySQL  </p>
+			</div>
+			<div class="page-inner-title col-sm-12">
+				<h3>Project Showcase</h3>
+			</div>
+			<div class="project">
+				<div class="page-inner-title col-sm-12">
+					<h3><a href="https://richasha.github.io/Pizza/index.html">Pizza</a></h3>
+				</div>
+				<p>It is an online website for pizza order. It uses HTML5, CSS3, Bootstrap, Jquery and JavaScript</p>
+			</div>
+			<div class="project">
+				<div class="page-inner-title col-sm-12">
+					<h3><a href="https://github.com/richaSha/ticktackgame">Tick Tack Toe</a></h3>
+				</div>
+				<p>The object of Tic Tac Toe is to get three in a row. You play on a three by three game board. The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in a row or all nine squares are filled. X always goes first, and in the event that no one has three in a row, the stalemate is called a cat game.. It uses HTML5, CSS3, Bootstrap, Jquery and JavaScript</p>
+			</div>
+			<div class="project">
+				<div class="page-inner-title col-sm-12">
+					<h3><a href="https://github.com/richaSha/Ping-Pong">Ping Pong</a></h3>
+				</div>
+				<p>It is an online game which replace user given numbers which divisible by 3, 5 or both with ping,pong and pingpong. It uses HTML5, CSS3, Bootstrap, Jquery and JavaScript</p>
+			</div>
+			<div class="project">
+				<div class="page-inner-title col-sm-12">
+					<h3><a href="https://github.com/richaSha/romanConverter">Roman Converter</a></h3>
+				</div>
+				<p>It convert user given numbers into roman number. It uses HTML5, CSS3, Bootstrap, Jquery and JavaScript</p>
+			</div>
+			<div class="project">
+				<div class="page-inner-title col-sm-12">
+					<h3><a href="https://github.com/richaSha/primeNumer">Prime</a></h3>
+				</div>
+				<p>It is an online website for finding given user year or any number is prime or not. It uses HTML5, CSS3, Bootstrap, Jquery and JavaScript</p>
+			</div>
+			<div class="project">
+				<div class="page-inner-title col-sm-12">
+					<h3><a href="https://github.com/richaSha/trackSelection">Track Selector</a></h3>
+				</div>
+				<p>It is an online website for selecting programming track as per user intrest. It uses HTML5, CSS3, Bootstrap, Jquery and JavaScript</p>
+			</div>
+		</div>
+		<div class="footer">
+			<span>© Richa.ME 2017</span>
+		</div>
 	</div>
 </body>
 </html>
